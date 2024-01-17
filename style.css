@@ -12,13 +12,14 @@
 
 body{
     min-height: 100vh;
-    background: url(./images/background.jpg);
+    background: url(./images/background2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
+    transitioN: background 1s linear;
 }
 
 
@@ -82,6 +83,12 @@ body{
 .search-box__location-icon{
     position: absolute;
     left: 10px;
+}
+
+.search-box__btn-icon{
+    position: absolute;
+    width: 28px;
+    height: 28px;
 }
 
 .weather-box{
@@ -226,6 +233,12 @@ body{
   .shake {
     animation: shake 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) both;
   }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+
 
 
 

@@ -12,7 +12,10 @@
             <div class="search-box">
                 <img class="search-box__location-icon" src="./images/location-icon.svg" loading="lazy" alt="иконка выбор локации">
                 <input class="search-box__input" type="text" placeholder="Введите вашу локацию">
-                <button class="search-box__btn"><img class="search-box__btn-icon" src="./images/search-icon.svg" loading="lazy" alt="иконка поиска"></button>
+                <button class="search-box__btn">
+                    <img class="search-box__btn-icon hidden" src="./images/loading.gif" alt="иконка поиска">
+                    <img class="search-box__btn-icon" src="./images/search-icon.svg" alt="иконка поиска">
+                </button>
             </div>
     
             <div class="weather-box">
@@ -31,14 +34,12 @@
                             <p class="weather-info__name">Влажность</p>
                         </div>
                     </div>
-                <div class="weather-info__box weather-info__box_wind">
-                  
+                    <div class="weather-info__box weather-info__box_wind">
                         <img class="weather-info__img" alt="иконка ветра" src="./images/wind-icon.svg">
                         <div class="weather-info__text">
                             <p class="weather-info__value-box"><span class="weather-info__wind-value">0</span> м/cек</p>
                             <p class="weather-info__name">Скорость ветра</p>
                         </div>
-                    
                 </div>
             </div>
     
