@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+
+  box-sizing: border-box;
+  margin: 0;
+
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body{
+    min-height: 100vh;
+    background: url(./images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+
+.container {
+    position: relative;
+    width: 420px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 16px;
+    padding: 20px;
+    color: #fff;
+    transition: height .2s ease;
+
+    
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box__input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0 48px 0 42px;
+}
+
+.search-box input::placeholder{
+    color: #fff;
+    text-transform: none;
+}
+
+.search-box__btn{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 40px 0 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-box__location-icon{
+    position: absolute;
+    left: 10px;
+}
+
+.weather-box{
+    text-align: center;
+    margin: 40px 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.weather-box__wrapper{
+    overflow: hidden;
+    transform: translateY(-100%);
+    visibility: hidden;
+    
+}
+
+.weather-box__img{
+    width: 55%;
+    margin-bottom: 20px;
+}
+
+.weather-box__temperature{
+    position: relative;
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 700;
+    margin-left: 0;
+    margin-bottom: 6px;
+}
+
+.weather-box__celsius {
+    position: absolute;
+    font-size: 24px;
+    margin-left: 4px;
+}
+
+.weather-box__description{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.weather-info{
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    pointer-events: none;
+    overflow: hidden;
+    
+}
+
+
+.weather-info__box{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    transform: translateY(-100%);
+}
+
+.weather-info__box_humidity{
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.weather-info__box_wind{
+    padding-right: 20px;
+    justify-content: flex-start;
+}
+
+.weather-info__img{
+    width: 55px;
+    margin-right: 10px;
+}
+
+.weather-info__value-box {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.weather-info__name{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.weather-info__text{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.not-found{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    margin-top: 120px;
+    overflow: hidden;
+}
+
+.not-found__wrapper{
+    visibility: hidden;
+    transform: translateY(-100%);
+}
+
+.not-found__img{
+    width: 65%;
+    margin-bottom: 12px;
+}
+
+.not-found__text{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+.active {
+    visibility: visible;
+    transform: translateY(0%);
+    transition: transform 1s ease;
+    transition-delay: 0.8s;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translateX(-0.5px);
+     }
+    20%, 80% {
+      transform: translateX(1px);
+    }
+    30%, 50%, 70% {
+      transform: translateX(-2px);
+    }
+    40%, 60% {
+      transform: translateX(2px);
+    }
+  }
+  .shake {
+    animation: shake 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) both;
+  }
+
+
+
+
+

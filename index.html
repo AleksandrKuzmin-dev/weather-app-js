@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прогноз погоды</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <div class="container">
+            
+            <div class="search-box">
+                <img class="search-box__location-icon" src="./images/location-icon.svg" loading="lazy" alt="иконка выбор локации">
+                <input class="search-box__input" type="text" placeholder="Введите вашу локацию">
+                <button class="search-box__btn"><img class="search-box__btn-icon" src="./images/search-icon.svg" loading="lazy" alt="иконка поиска"></button>
+            </div>
+    
+            <div class="weather-box">
+                <div class="weather-box__wrapper">
+                    <img class="weather-box__img" src="./images/cloud.png" alt="Изображение погоды">
+                    <p class="weather-box__temperature"><span class="weather-box__value">16</span><span class="weather-box__celsius">°C</span></p>
+                    <p class="weather-box__description">Облачно</p>
+                </div>
+            </div>
+            
+            <div class="weather-info">
+                    <div class="weather-info__box weather-info__box_humidity">
+                        <img class="weather-info__img" alt="иконка влажности" src="./images/water-icon.svg">
+                        <div class="weather-text">
+                            <p class="weather-info__value-box"><span class="weather-info__humidity-value">0</span>%</p>
+                            <p class="weather-info__name">Влажность</p>
+                        </div>
+                    </div>
+                <div class="weather-info__box weather-info__box_wind">
+                  
+                        <img class="weather-info__img" alt="иконка ветра" src="./images/wind-icon.svg">
+                        <div class="weather-info__text">
+                            <p class="weather-info__value-box"><span class="weather-info__wind-value">0</span> м/cек</p>
+                            <p class="weather-info__name">Скорость ветра</p>
+                        </div>
+                    
+                </div>
+            </div>
+    
+            <div class="not-found">
+                <div class="not-found__wrapper">
+                    <img class="not-found__img" alt="Изображение поиска" src="./images/404.png">
+                    <p class="not-found__text">Упс! Локация не найдена!</p>
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
