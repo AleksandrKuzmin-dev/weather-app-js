@@ -149,6 +149,11 @@ body{
     align-items: center;
     visibility: hidden;
     transform: translateY(-100%);
+
+    @media (max-width: 389px) {
+       flex-direction: column;
+       text-align: center; 
+    }
 }
 
 .weather-info__box_humidity{

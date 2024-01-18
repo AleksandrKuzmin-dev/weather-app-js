@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     searchInput.addEventListener('input', () => {
-        if(searchInput.value.match(/[\d!@#$%^&*()_,\.\/+'">?<~]/)){
+        if(searchInput.value.match(/[\d!@#$%^&*(№;)_,\.\/+'">?<~]/)){
             shakeEffect(searchInput);
         };
         
@@ -138,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function showNotFound(){
         changeRequestState();
+        bodyBlock.style.background = "url('./images/background2.jpg')";
         container.style.height = '400px';
         weatherBox.classList.remove('active');
         weatherInfo[0].classList.remove('active');
