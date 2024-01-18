@@ -4,7 +4,7 @@
 ![Static Badge](https://img.shields.io/badge/CSS-blue)
 ![Static Badge](https://img.shields.io/badge/Free_API-gray)
 
-Проект был выполнен с целью закрепления полученных навыков программирования на JavaScript и практики взаимодействия с бесплатными API, в данном случае https://openweathermap.org/
+Проект выполнен с целью закрепления полученных навыков программирования на JavaScript и практики взаимодействия с бесплатными API, в данном случае https://openweathermap.org/
 
 ## Запуск приложения
 
